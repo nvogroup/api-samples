@@ -1,10 +1,12 @@
-# How to send requests to our APIs
+# Getting Started
 
-This guide will walk you through the necessary steps to send requests to our APIs.
+This guide offers step-by-step instructions for sending requests to our APIs. Please note that you won't be able to proceed with this guide if your account has not yet been enabled. If your account is not enabled, the following notification will be displayed in the [API portal](https://api-portal.nvoconsolidation.com/).
+
+![alt text](images/not_activated_account.png)
 
 # 1. Register a client
 
-To retrieve access tokens, you first need to register a client. Start by opening the NVOGO portal and clicking the **Developers Settings** button in the top-right menu. If you cannot see this menu item, please contact it@vbemsagroup.com.
+To obtain access tokens, you must first register a client. Begin by visiting the [NVOGO portal](https://nvogo.nvoconsolidation.com/) and clicking the **Developers Settings** button in the top-right menu. If you do not see this option, try logging out and back in. If the menu item remains hidden, please contact it@vbemsagroup.com for assistance.
 
 ![developers settings](images/developers_settings.png)
 
@@ -14,7 +16,7 @@ This will open the API Management Client Settings screen, where you'll find a Cl
 
 # 2. Subscribe to a product
 
-To send requests to an API, a subscription key is required. You can obtain this key by subscribing to a product. Navigate to the [**Products**](https://api-portal.nvoconsolidation.com/products) page within the API Management portal.
+To send requests to an API, a subscription key is required. You can obtain this key by subscribing to a product. Navigate to the [**Products**](https://api-portal.nvoconsolidation.com/products) page within the API portal.
 
 ![Products overview](images/products_page.png)
 
@@ -102,6 +104,6 @@ This repository includes additional examples in the **Samples** folder, such as 
 
 # More docs
 
-To view all available endpoints and their required request bodies, navigate to the [**APIs**](https://api-portal.nvoconsolidation.com/apis) page within the API Management portal. This page displays a list of all available APIs. Clicking on any Api will open a detailed screen where you can see all endpoints and their corresponding request bodies.
+To view all available endpoints and their required request bodies, navigate to the [**APIs**](https://api-portal.nvoconsolidation.com/apis) page within the API portal. This page displays a list of all available APIs. Clicking on any Api will open a detailed screen where you can see all endpoints and their corresponding request bodies.
 
 ![Api's page](images/apis_page.png)
