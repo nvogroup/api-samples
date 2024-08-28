@@ -41,6 +41,7 @@ Now that you have all the necessary information, you first need to retrieve an a
 1. https://nvogo.onmicrosoft.com/shipments-api/shipments-api - used for the **Shipments API**
 2. https://nvogo.onmicrosoft.com/rates-api/rates-api - used for the **Rates API**
 3. https://nvogo.onmicrosoft.com/sailings-api/sailings-api - used for the **Sailings API**
+4. https://nvogo.onmicrosoft.com/core-api/core-api - used for the **Core API**
 
 in addition to this, you'll need your client ID, along with your username (email) and password. Then you can use the following C# code to obtain an access token:
 
