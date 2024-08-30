@@ -20,7 +20,7 @@ To send requests to an API, a subscription key is required. You can obtain this 
 
 ![Products overview](images/products_page.png)
 
-Select the desired product and choose either **Sandbox** (for testing) or **Production**. Clicking this will open the following screen.
+Select the desired product and choose either **SandBox**, in which case your application will communicate with the [testing environment](https://nvogo-testing.nvoconsolidation.com), whereas choosing **Production** will direct all communication to the [production environment](https://nvogo.nvoconsolidation.com).
 
 ![Subscribe to a product](images/subscribe_to_a_product.png)
 
