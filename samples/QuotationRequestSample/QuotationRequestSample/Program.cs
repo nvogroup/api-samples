@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 using System.Net.Http.Headers;
 
 var requestUrl = "https://api.nvoconsolidation.com/rates/api/Quotes";
-var authority = "https://nvogo.b2clogin.com/tfp/nvogo.onmicrosoft.com/B2C_1_ROPC/";
+var authority = "https://nvogo.b2clogin.com/tfp/nvogo.onmicrosoft.com/B2C_1_ROPC/v2.0/";
 var scope = "https://nvogo.onmicrosoft.com/rates-api/rates-api";
 var apimSubscriptionKey = "<YOUR-SUBSCRIPTION-KEY>";
 var clientId = "<YOUR-CLIENT-ID>";
