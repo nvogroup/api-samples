@@ -48,7 +48,7 @@ in addition to this, you'll need your client ID, along with your username (email
 ```c#
 using Microsoft.Identity.Client;
 
-var authority = "https://nvogo.b2clogin.com/tfp/nvogo.onmicrosoft.com/B2C_1_ROPC/";
+var authority = "https://nvogo.b2clogin.com/nvogo.onmicrosoft.com/B2C_1_ROPC/v2.0/";
 var scope = "https://nvogo.onmicrosoft.com/shipments-api/shipments-api";
 var clientId = "<YOUR-CLIENT-ID>";
 var userName = "<YOUR-USERNAME>";
