@@ -69,6 +69,16 @@ Console.WriteLine($"Retrieved access token: {result.AccessToken}");
 
 This code will generate an access token that is valid for **60 minutes**. You can re-execute the request or use a refresh token to obtain a new access token. Note that the **Microsoft.Identity.Client** NuGet package handles refresh tokens automatically. If you prefer to manage refresh tokens manually, keep in mind that they are valid for 14 days. More information on acquiring and using refresh tokens can be found [here](https://learn.microsoft.com/en-us/azure/active-directory-b2c/add-ropc-policy?tabs=app-reg-ga&pivots=b2c-user-flow#test-the-ropc-flow).
 
+If you wish to retreive a token without using C# or the **Microsoft.Identity.Client** package, you can use https://nvogo.b2clogin.com/nvogo.onmicrosoft.com/B2C_1_ROPC/oauth2/v2.0/token endpoint to retrieve a access token. Please note that you have to pass in the following parameters in the body of the request:
+
+- grant_type: this has to be **password**
+- client_id: your Client ID retrieved in step 1
+- scope: your desired scope
+- username: your username
+- password: your password
+
+For extra information about authorization, please visit the [discovery document](https://nvogo.b2clogin.com/nvogo.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC). This holds all the information needed to authorize. Please note that url's in the discovery document are using a url parameter (?p=b2c_1_ropc), but the earlier mentioned token endpoint format will also work.
+
 # 4. Execute a request
 
 With a valid access token and subscription key, you are ready to make a request. The following code demonstrates how to perform a **GET** request to the **Shipments API** to retrieve a shipment by its ID:
