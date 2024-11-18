@@ -77,7 +77,7 @@ If you wish to retreive a token without using C# or the **Microsoft.Identity.Cli
 - username: your username
 - password: your password
 
-For extra information about authorization, please visit the [discovery document](https://nvogo.b2clogin.com/nvogo.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC). This holds all the information needed to authorize. Please note that url's in the discovery document are using a url parameter (?p=b2c_1_ropc), but the earlier mentioned token endpoint format will also work.
+For extra information about authorization, please visit the [discovery document](https://nvogo.b2clogin.com/nvogo.onmicrosoft.com/B2C_1_ROPC/v2.0/.well-known/openid-configuration). This holds all the information needed to authorize.
 
 # 4. Execute a request
 
