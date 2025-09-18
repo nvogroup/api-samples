@@ -1,12 +1,12 @@
 # Getting Started
 
-This guide offers step-by-step instructions for sending requests to our APIs. Please note that you won't be able to proceed with this guide if your account has not yet been enabled. If your account is not enabled, the following notification will be displayed in the [API portal](https://api-portal.nvoconsolidation.com/).
+This guide offers step-by-step instructions for sending requests to our APIs. Please note that you won't be able to proceed with this guide if your account has not yet been enabled. If your account is not enabled, the following notification will be displayed in the [API portal](https://api-portal.nvoworldwide.com/).
 
 ![alt text](images/not_activated_account.png)
 
 # 1. Register a client
 
-To obtain access tokens, you must first register a client. Begin by visiting the [NVOGO portal](https://nvogo.nvoconsolidation.com/) and clicking the **Developers Settings** button in the top-right menu. If you do not see this option, try logging out and back in. If the menu item remains hidden, please contact it@vbemsagroup.com for assistance.
+To obtain access tokens, you must first register a client. Begin by visiting the [NVOGO portal](https://nvogo.nvoworldwide.com/) and clicking the **Developers Settings** button in the top-right menu. If you do not see this option, try logging out and back in. If the menu item remains hidden, please contact it@vbemsagroup.com for assistance.
 
 ![developers settings](images/developers_settings.png)
 
@@ -16,11 +16,11 @@ This will open the API Management Client Settings screen, where you'll find a Cl
 
 # 2. Subscribe to a product
 
-To send requests to an API, a subscription key is required. You can obtain this key by subscribing to a product. Navigate to the [**Products**](https://api-portal.nvoconsolidation.com/products) page within the API portal.
+To send requests to an API, a subscription key is required. You can obtain this key by subscribing to a product. Navigate to the [**Products**](https://api-portal.nvoworldwide.com/products) page within the API portal.
 
 ![Products overview](images/products_page.png)
 
-Select the desired product and choose either **SandBox**, in which case your application will communicate with the [testing environment](https://nvogo-testing.nvoconsolidation.com), whereas choosing **Production** will direct all communication to the [production environment](https://nvogo.nvoconsolidation.com).
+Select the desired product and choose either **SandBox**, in which case your application will communicate with the [testing environment](https://nvogo-testing.nvoworldwide.com), whereas choosing **Production** will direct all communication to the [production environment](https://nvogo.nvoworldwide.com).
 
 ![Subscribe to a product](images/subscribe_to_a_product.png)
 
@@ -28,7 +28,7 @@ Subscribe to the product by clicking the yellow **Subscribe** button. After subs
 
 ![alt text](images/active_subscription.png)
 
-Once subscribed, you can find the subscription key on the [**Profile**](https://api-portal.nvoconsolidation.com/profile) page, which displays all your subscriptions and their associated keys.
+Once subscribed, you can find the subscription key on the [**Profile**](https://api-portal.nvoworldwide.com/profile) page, which displays all your subscriptions and their associated keys.
 
 ![Profile Page](images/profile_page.png)
 
@@ -89,7 +89,7 @@ using System.Net.Http.Headers;
 var shipmentId = "<YOUR-SHIPMENT-ID>";
 var accessToken = "<YOUR-ACCESS-TOKEN>";
 var apimSubscriptionKey = "<YOUR-SUBSCRIPTION-KEY>";
-var requestUrl = $"https://api.nvoconsolidation.com/shipments/api/Shipments/{shipmentId}";
+var requestUrl = $"https://api.nvoworldwide.com/shipments/api/Shipments/{shipmentId}";
 
 var apiClient = new HttpClient();
 apiClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", apimSubscriptionKey);
@@ -115,6 +115,6 @@ This repository includes additional examples in the **Samples** folder, such as 
 
 # More docs
 
-To view all available endpoints and their required request bodies, navigate to the [**APIs**](https://api-portal.nvoconsolidation.com/apis) page within the API portal. This page displays a list of all available APIs. Clicking on any Api will open a detailed screen where you can see all endpoints and their corresponding request bodies.
+To view all available endpoints and their required request bodies, navigate to the [**APIs**](https://api-portal.nvoworldwide.com/apis) page within the API portal. This page displays a list of all available APIs. Clicking on any Api will open a detailed screen where you can see all endpoints and their corresponding request bodies.
 
 ![Api's page](images/apis_page.png)
